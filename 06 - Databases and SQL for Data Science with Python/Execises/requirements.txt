@@ -1,3 +1,6 @@
-ipython-sql
 matplotlib
 seaborn
+ibm_db
+ibm_db_sa
+sqlalchemy==1.4.47
+ipython-sql==0.4.1

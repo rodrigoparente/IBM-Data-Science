@@ -1,0 +1,3 @@
+ipython-sql
+matplotlib
+seaborn

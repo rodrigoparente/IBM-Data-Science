@@ -1,8 +1,0 @@
-yfinance
-pandas
-matplotlib
-BeautifulSoup4
-html5lib
-lxml
-nbformat
-plotly

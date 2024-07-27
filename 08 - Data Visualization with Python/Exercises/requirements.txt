@@ -2,3 +2,9 @@ jupyter
 pandas
 numpy
 openpyxl
+Pillow
+matplotlib
+seaborn
+wordcloud
+pywaffle
+folium

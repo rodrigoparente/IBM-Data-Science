@@ -10,7 +10,7 @@ from dash.dependencies import Input, Output
 
 # Read the airline data into pandas dataframe
 airline_data = pd.read_csv(
-    'https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0101EN-SkillsNetwork/Data%20Files/airline_data.csv', 
+    'https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0101EN-SkillsNetwork/Data%20Files/airline_data.csv',  # noqa 501
     encoding="ISO-8859-1", dtype={'Div1Airport': str, 'Div1TailNum': str, 'Div2Airport': str, 'Div2TailNum': str})
 
 # Create a dash application
@@ -21,7 +21,10 @@ app.layout = html.Div(
     children=[
         html.H1('Flight Delay Time Statistics', style={'textAlign': 'center', 'color': '#503D36', 'font-size': 30}),
         html.Div([
-            "Input Year: ", dcc.Input(id='input-year', value='2010', type='number', style={'height': '35px', 'font-size': 30})
+            "Input Year: ",
+            dcc.Input(
+                id='input-year', value='2010', type='number',
+                style={'height': '35px', 'font-size': 30})
         ], style={'font-size': 30}),
         html.Br(),
         html.Br(),
@@ -39,12 +42,13 @@ app.layout = html.Div(
 
 """ Compute_info function description
 
-This function takes in airline data and selected year as an input and performs computation for creating charts and plots.
+This function takes in airline data and selected year as
+an input and performs computation for creating charts and plots.
 
 Arguments:
     airline_data: Input airline data.
     entered_year: Input year for which computation needs to be performed.
-    
+
 Returns:
     Computed average dataframes for carrier delay, weather delay, NAS delay, security delay, and late aircraft delay.
 
@@ -70,7 +74,7 @@ Function that returns fugures using the provided input year.
 Arguments:
 
     entered_year: Input year provided by the user.
-    
+
 Returns:
 
     List of figures computed using the provided helper function `compute_info`.
@@ -91,15 +95,29 @@ def get_graph(entered_year):
     avg_car, avg_weather, avg_NAS, avg_sec, avg_late = compute_info(airline_data, entered_year)
 
     # Line plot for carrier delay
-    carrier_fig = px.line(avg_car, x='Month', y='CarrierDelay', color='Reporting_Airline', title='Average carrrier delay time (minutes) by airline')
+    carrier_fig = px.line(
+        avg_car, x='Month', y='CarrierDelay', color='Reporting_Airline',
+        title='Average carrrier delay time (minutes) by airline')
+
     # Line plot for weather delay
-    weather_fig = px.line(avg_weather, x='Month', y='WeatherDelay', color='Reporting_Airline', title='Average weather delay time (minutes) by airline')
+    weather_fig = px.line(
+        avg_weather, x='Month', y='WeatherDelay', color='Reporting_Airline',
+        title='Average weather delay time (minutes) by airline')
+
     # Line plot for nas delay
-    nas_fig = px.line(avg_NAS, x='Month', y='NASDelay', color='Reporting_Airline', title='Average NAS delay time (minutes) by airline')
+    nas_fig = px.line(
+        avg_NAS, x='Month', y='NASDelay', color='Reporting_Airline',
+        title='Average NAS delay time (minutes) by airline')
+
     # Line plot for security delay
-    sec_fig = px.line(avg_sec, x='Month', y='SecurityDelay', color='Reporting_Airline', title='Average security delay time (minutes) by airline')
+    sec_fig = px.line(
+        avg_sec, x='Month', y='SecurityDelay', color='Reporting_Airline',
+        title='Average security delay time (minutes) by airline')
+
     # Line plot for late aircraft delay
-    late_fig = px.line(avg_late, x='Month', y='LateAircraftDelay', color='Reporting_Airline', title='Average late aircraft delay time (minutes) by airline')
+    late_fig = px.line(
+        avg_late, x='Month', y='LateAircraftDelay', color='Reporting_Airline',
+        title='Average late aircraft delay time (minutes) by airline')
 
     return [carrier_fig, weather_fig, nas_fig, sec_fig, late_fig]
 

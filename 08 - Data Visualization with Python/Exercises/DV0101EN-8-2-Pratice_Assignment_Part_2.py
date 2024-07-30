@@ -10,7 +10,7 @@ app = dash.Dash(__name__)
 # clear the layout and do not display exception till callback gets executed
 app.config.suppress_callback_exceptions = True
 # read the wildfire data into pandas dataframe
-df = pd.read_csv('https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0101EN-SkillsNetwork/Data%20Files/Historical_Wildfires.csv')
+df = pd.read_csv('https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0101EN-SkillsNetwork/Data%20Files/Historical_Wildfires.csv')  # noqa 501
 
 # extract year and month from the date column
 df['Month'] = pd.to_datetime(df['Date']).dt.month_name()

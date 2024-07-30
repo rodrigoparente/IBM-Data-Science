@@ -142,3 +142,5 @@
  - Matplotlib is a versatile plotting library for various plot types;
  - Data storytelling involves creating narratives around data;
  - Data visualization creates engaging visuals to communicate insights.
+
+# Glossary

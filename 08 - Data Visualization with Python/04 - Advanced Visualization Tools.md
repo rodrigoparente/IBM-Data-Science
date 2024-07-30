@@ -1,4 +1,5 @@
 # Waffle Charts
+
  - A waffle chart (also known as a square pie chart) visually represents categorical data through a grid of small squares, resembling a waffle;
  - Each category is assigned a unique color, and the number of squares allocated to each category corresponds to its proportional share of the total data count;
  - Waffle charts are an alternative to pie charts for displaying proportions;
@@ -41,3 +42,10 @@
     plt.title("Word Cloud Example")
     plt.show()
     ```
+
+# Summary
+
+   - A waffle chart is essentially a square grid where each cell represents a portion or percentage of the whole;
+   - A word cloud visualizes how frequently words appear in a given body of text.
+
+# Glossary

@@ -102,3 +102,10 @@
     plt.show()
     ```
 
+# Summary
+
+ - Area Chart represents data using filled areas under a line;
+ - Histogram displays the distribution of a continuous variable
+ - Bar Chart uses rectangular bars to represent data.
+
+# Glossary

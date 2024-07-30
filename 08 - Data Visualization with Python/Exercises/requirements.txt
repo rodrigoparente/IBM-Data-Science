@@ -8,3 +8,7 @@ seaborn
 wordcloud
 pywaffle
 folium
+httpx
+dash
+plotly
+packaging

@@ -19,7 +19,7 @@
 
  - R is an open-source language, which means it is free to use and can be modified by anyone;
  - It is widely used for its statistical techniques such as linear and nonlinear modeling, classical statistical tests, time-series analysis, classification, and clustering;
- - R supports a wide range of data types and structures, including vectors, matrices, data frames, and lists, making it highly versatile for data manipulation³.
+ - R supports a wide range of data types and structures, including vectors, matrices, data frames, and lists, making it highly versatile for data manipulation.
  - R can produce high-quality static and interactive graphics, making it a popular choice for creating detailed plots and charts;
  - It has a large and active community of users and developers;
  - According to Kaggle’s Data Science and Machine Learning survey, most programmers learn R after a few years into their data science career.

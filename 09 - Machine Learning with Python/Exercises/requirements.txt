@@ -1,0 +1,8 @@
+pandas
+numpy
+pylab
+scikit-learn
+matplotlib
+seaborn
+snapml
+skillsnetwork

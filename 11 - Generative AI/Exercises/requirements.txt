@@ -1,0 +1,12 @@
+pandas
+numpy
+matplotlib
+seaborn
+scipy
+wget
+ucimlrepo
+ibm-watsonx-ai
+langchain
+langchain-ibm
+langchain-experimental
+ibm_watson_machine_learning

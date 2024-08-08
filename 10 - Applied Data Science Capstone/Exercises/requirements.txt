@@ -1,0 +1,11 @@
+pandas
+numpy
+requests
+beautifulsoup4
+sqlalchemy
+ipython-sql
+folium
+wget
+dash
+plotly
+scikit-learn

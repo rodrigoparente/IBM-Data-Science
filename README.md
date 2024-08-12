@@ -14,3 +14,5 @@ This repository contains the notes I took while doing the Data Science specializ
  - [08 - Data Visualization with Python](08%20-%20Data%20Visualization%20with%20Python)
  - [09 - Machine Learning with Python](09%20-%20Machine%20Learning%20with%20Python)
  - [10 - Applied Data Science Capstone](10%20-%20Applied%20Data%20Science%20Capstone)
+ - [11 - Generative AI](11%20-%20Generative%20AI)
+ - [12 - Data Scientist Career Guide and Interview Preparation](12%20-%20Data%20Scientist%20Career%20Guide%20and%20Interview%20Preparation)

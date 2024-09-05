@@ -1,6 +1,6 @@
 # IBM Data Science Professional Certificate
 
-This repository contains the notes I took while doing the Data Science specialization course offered by IBM on Coursera.
+This repository contains my notes while doing the Data Science Specialization course offered by IBM on [Coursera](https://www.coursera.org/professional-certificates/ibm-data-science). My certificate can be found at [IBM Data Science Professional Certificate](https://coursera.org/share/15eec11dceb9d12bed0e89121a93ab55).
 
 ## Course Syllabus
 
